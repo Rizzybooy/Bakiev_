@@ -1,0 +1,63 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serifx;
+}
+.container {
+	display: flex;
+}
+#bookclub {
+	background-color: #0078B9;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	position: relative;
+	color: #fff;
+}
+.main-info> h3, h1, p {
+	padding: 1.25rem;
+	font-weight: 300;
+	line-height: 1.42;
+}
+.main-info h3 {
+	font-size: 1.56rem;
+	text-transform: uppercase;
+}
+.main-info h1 {
+	font-size: 3.75rem;
+	line-height: 1;
+	letter-spacing: -1.8;
+}
+.more {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	top: 2.5rem;
+	left: 6.25rem;
+	transition: all 0.2s ease-in;
+	position: relative;
+	overflow: hidden;
+	font-size: 1rem;
+	color: black;
+	font-weight: 500;
+}
+.book {
+	position: relative;
+}
+.img-fluid {
+	width: 25rem;
+	height: 25rem;
+	border-radius: 50%;
+	display: flex;
+}
+.wave-icon {
+	height: 3.12rem;
+}
+path {
+	font-size: 4.5rem;
+	color: rgb(255, 255, 255 );
+}
