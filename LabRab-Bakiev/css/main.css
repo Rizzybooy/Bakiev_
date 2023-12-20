@@ -1,0 +1,267 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* HEADER SECTION */
+.container {
+    max-width: 900px;
+}
+section {
+	padding: 0 0 45px 0;
+}
+header {
+	background: #f7f7f7;
+	box-shadow: -4px 4px 8px rgba(0, 0, 0, 1.6);;
+}
+.header-nav {
+	height: 80px;
+	display: flex;
+	align-items: center;
+}
+.header-nav>a{
+	color: black;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+	position: relative;
+}
+.header-nav>a:hover{
+	color: cornflowerblue;
+}
+.header-nav>a::after {
+	content: '';
+	position: absolute;
+	left: 25%;
+	top: 30px;
+	background-color: cornflowerblue;
+	height: 2px;
+	width: 0;
+}
+.header-nav>a:hover::after {
+	width: 50%;
+	transition: 0.5s all;
+}
+
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    max-width: 900px;
+    display: flex;
+}
+#about {
+	background: linear-gradient(45deg, #2596be, #cd3edb);
+}
+#about img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 6px solid #cd3edb;
+}
+.about-card {
+	background-color: #fff;
+	width: 33%;
+	margin: 20px;
+	padding: 30px;
+	box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 0 0 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#about h4 {
+	font-size: 20px;
+	text-align: center;
+}
+#about ul {
+	margin: 20px 0;
+	list-style-type: none;
+}
+#about li {
+	line-height: 1.5;
+}
+#about li::before {
+	content: '\2014';
+}
+.about-card:hover {
+	transform: translate3d(5px, 5px, 5px);
+	transition: 0.5s all;
+}
+
+/* Service */
+#service {
+	background-color: #f7f7f7;
+}
+
+/* Portfolio */
+
+#porfolio {
+    background-color: #f7f7f7;
+}
+#porfolio h2 {
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+#porfolio h2, #porfolio p {
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+#porfolio h2::before {
+	content: '';
+	position: absolute;
+	background-color: #0067FF;
+	width: 80px;
+	height: 2px;
+	bottom: -5px;
+	left: 590px;
+}
+.portfolio-card {
+	width: 33%;
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border: 2px solid #f7f7f7;
+    border-radius: 5px;
+}
+.portfolio-card > h3 {
+    text-align: center;
+		padding: 12px;
+}
+.portfolio-card:hover {
+    box-shadow: 9px 8px 10px 3px rgb(0 0 0 / 15%);
+    transform: scale(1.085);
+}
+.portfolio-card>img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+/* Services */
+#services {
+    background-color: #f7f7f7;
+}
+.services-card {
+    width: 33%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.service-icons {
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgb(12, 89, 151);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-card:hover .service-icons {
+    border: 2px solid #fff;
+    background-color: rgb(16, 81, 155);
+    transition: 0.5s all;
+}
+.service-icons>i {
+    font-size: 45px;
+    color: rgb(16, 81, 155);
+}
+.services-card:hover .service-icons>i {
+    color: #fff;
+    transition: 0.5s all;
+}
+.services-card h2 {
+    text-align: center;
+    color: rgba(6, 85, 231, 0.776);
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+.services-card p {
+	font-size: 12.6px;
+    text-align: center;
+    font-style: italic;
+    color: rgb(34, 34, 34);
+}
+.services-card::after {
+    content: '';
+    margin: 0 auto;
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 100px;
+    height: 3.3px;
+}
+.services-card:hover::after {
+    background-color: #10A5DE;
+    transition: 0.5s all;
+}
+
+/* ACTION */
+
+#action {
+    background: url('../image/1_aTYOTFS4Vkr-nwHNML3GvQ.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+.action-box {
+    min-height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000e0;
+    color: #fff;
+}
+
+/* HERO */
+
+#hero {
+    background: url('../image/Shaqi_jrvej.jpg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+		position: relative;
+    padding: 0!important;
+}
+.hero-content {
+    background-color: rgb(50 110 110 / 80%);;
+    width: 400px;
+    height: 100%;
+    padding: 0 40px;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    color: #fff;
+    align-items: flex-end;
+    position: absolute;
+    right: 100px;
+}
+.hero-content p {
+    margin-bottom: 140px;
+    position: relative;
+}
+.hero-content p::before {
+	content: '';
+	position: absolute;
+	background-color: #fff;
+	width: 120px;
+	height: 4px;
+	top: -20px;
+}
